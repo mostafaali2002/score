@@ -16,25 +16,22 @@ class UpCommingMatchsCard extends StatelessWidget {
         ),
         color: Colors.transparent,
       ),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            CommingMatchTeam(
-                homeOrAway: upCommingMatchsModel.homeOrAway,
-                logoTeam: upCommingMatchsModel.logoTeam,
-                teamName: upCommingMatchsModel.teamName),
-            TimeAndDate(
-              date: upCommingMatchsModel.date,
-              time: upCommingMatchsModel.startTime,
-            ),
-            CommingMatchTeam2(
-                homeOrAway2: upCommingMatchsModel.homeOrAway2,
-                logoTeam2: upCommingMatchsModel.logoTeam2,
-                teamName2: upCommingMatchsModel.teamName2),
-          ],
-        ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          CommingMatchTeam(
+              homeOrAway: upCommingMatchsModel.homeOrAway,
+              logoTeam: upCommingMatchsModel.logoTeam,
+              teamName: upCommingMatchsModel.teamName),
+          TimeAndDate(
+            date: upCommingMatchsModel.date,
+            time: upCommingMatchsModel.startTime,
+          ),
+          CommingMatchTeam2(
+              homeOrAway2: upCommingMatchsModel.homeOrAway2,
+              logoTeam2: upCommingMatchsModel.logoTeam2,
+              teamName2: upCommingMatchsModel.teamName2),
+        ],
       ),
     );
   }

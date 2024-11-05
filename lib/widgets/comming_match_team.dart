@@ -21,20 +21,23 @@ class CommingMatchTeam extends StatelessWidget {
         const SizedBox(
           width: 10,
         ),
-        Column(
-          children: [
-            Image.asset(
-              logoTeam,
-              height: 40,
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            Text(
-              homeOrAway,
-              style: AppStyle.styleRegular11,
-            )
-          ],
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 8),
+          child: Column(
+            children: [
+              Image.asset(
+                logoTeam,
+                height: 40,
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Text(
+                homeOrAway,
+                style: AppStyle.styleRegular11,
+              )
+            ],
+          ),
         ),
       ],
     );

@@ -66,7 +66,7 @@ class _UpCommingMatchListState extends State<UpCommingMatchList> {
         itemCount: items.length,
         itemBuilder: (context, index) {
           return Padding(
-            padding: const EdgeInsets.symmetric(vertical: 8),
+            padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 10),
             child: UpCommingMatchsCard(upCommingMatchsModel: items[index]),
           );
         },
