@@ -10,11 +10,10 @@ class UpCommingMatchsCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
-        border: BorderDirectional(
-            top: BorderSide(
-              color: Colors.white,
-            ),
-            bottom: BorderSide(color: Colors.white)),
+        border: Border(
+          top: BorderSide(color: Colors.white, width: 4),
+          bottom: BorderSide(color: Colors.white, width: 4),
+        ),
         color: Colors.transparent,
       ),
       child: Padding(
@@ -31,9 +30,9 @@ class UpCommingMatchsCard extends StatelessWidget {
               time: upCommingMatchsModel.startTime,
             ),
             CommingMatchTeam2(
-                homeOrAway: upCommingMatchsModel.homeOrAway,
-                logoTeam: upCommingMatchsModel.logoTeam,
-                teamName: upCommingMatchsModel.teamName),
+                homeOrAway2: upCommingMatchsModel.homeOrAway2,
+                logoTeam2: upCommingMatchsModel.logoTeam2,
+                teamName2: upCommingMatchsModel.teamName2),
           ],
         ),
       ),

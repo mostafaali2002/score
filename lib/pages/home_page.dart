@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:score/model/up_comming_matchs_model.dart';
-import 'package:score/utils/assets.dart';
+
 import 'package:score/widgets/custom_app_bar.dart';
 import 'package:score/widgets/live_match_card_list.dart';
 import 'package:score/widgets/live_matches.dart';
+import 'package:score/widgets/up_comming_match_card_list.dart';
 import 'package:score/widgets/up_comming_matchs.dart';
-import 'package:score/widgets/up_comming_matchs_card.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -35,13 +34,7 @@ class HomePage extends StatelessWidget {
           SizedBox(
             height: 13,
           ),
-          UpCommingMatchsCard(
-              upCommingMatchsModel: UpCommingMatchsModel(
-                  teamName: "teamName",
-                  homeOrAway: "homeOrAway",
-                  logoTeam: Assets.football,
-                  startTime: "startTime",
-                  date: "date")),
+          UpCommingMatchList(),
         ],
       ),
     );

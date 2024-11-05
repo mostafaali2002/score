@@ -9,6 +9,7 @@ class CommingMatchTeam extends StatelessWidget {
     required this.teamName,
   });
   final String homeOrAway, logoTeam, teamName;
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -43,11 +44,15 @@ class CommingMatchTeam extends StatelessWidget {
 class CommingMatchTeam2 extends StatelessWidget {
   const CommingMatchTeam2({
     super.key,
-    required this.homeOrAway,
-    required this.logoTeam,
-    required this.teamName,
+    required this.logoTeam2,
+    required this.homeOrAway2,
+    required this.teamName2,
   });
-  final String homeOrAway, logoTeam, teamName;
+
+  final String logoTeam2;
+  final String homeOrAway2;
+  final String teamName2;
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -55,14 +60,14 @@ class CommingMatchTeam2 extends StatelessWidget {
         Column(
           children: [
             Image.asset(
-              logoTeam,
+              logoTeam2,
               height: 40,
             ),
             const SizedBox(
               height: 10,
             ),
             Text(
-              homeOrAway,
+              homeOrAway2,
               style: AppStyle.styleRegular11,
             )
           ],
@@ -71,7 +76,7 @@ class CommingMatchTeam2 extends StatelessWidget {
           width: 10,
         ),
         Text(
-          teamName,
+          teamName2,
           style: AppStyle.styleBold16,
         ),
       ],
