@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:score/model/live_matche_model.dart';
+import 'package:score/pages/live_match_card_details_page.dart';
 import 'package:score/utils/app_style.dart';
 import 'package:score/utils/assets.dart';
 import 'package:score/widgets/card_details.dart';
@@ -10,30 +11,36 @@ class LiveMatcheCard extends StatelessWidget {
   final LiveMatcheModel liveMatcheModel;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          color: Color(liveMatcheModel.cardBackGroundColor)),
-      child: Stack(children: [
-        Image.asset(
-          Assets.logoFootball,
-          height: 250,
-        ),
-        Padding(
-          padding: const EdgeInsets.only(top: 20),
-          child: Column(
-            children: [
-              CardDetails(
-                  isActive: liveMatcheModel.cardBackGroundColor !=
-                      AppStyle.appColorOfWhite,
-                  matchTime: liveMatcheModel.time,
-                  numberOfWeek: liveMatcheModel.numberOfWeek,
-                  stadiumName: liveMatcheModel.stadiumName),
-              TeamsAndResultSection(liveMatcheModel: liveMatcheModel)
-            ],
+    return GestureDetector(
+      onTap: () {
+        Navigator.pushNamed(context, LiveMatchCardDetails.id,
+            arguments: liveMatcheModel);
+      },
+      child: Container(
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            color: Color(liveMatcheModel.cardBackGroundColor)),
+        child: Stack(children: [
+          Image.asset(
+            Assets.logoFootball,
+            height: 250,
           ),
-        )
-      ]),
+          Padding(
+            padding: const EdgeInsets.only(top: 20),
+            child: Column(
+              children: [
+                CardDetails(
+                    isActive: liveMatcheModel.cardBackGroundColor !=
+                        AppStyle.appColorOfWhite,
+                    matchTime: liveMatcheModel.time,
+                    numberOfWeek: liveMatcheModel.numberOfWeek,
+                    stadiumName: liveMatcheModel.stadiumName),
+                TeamsAndResultSection(liveMatcheModel: liveMatcheModel)
+              ],
+            ),
+          )
+        ]),
+      ),
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:score/pages/home_page.dart';
+import 'package:score/pages/live_match_card_details_page.dart';
 
 void main() {
   runApp(const Score());
@@ -8,13 +9,16 @@ void main() {
 class Score extends StatelessWidget {
   const Score({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.dark,
-      home: HomePage(),
+      routes: {
+        HomePage.id: (context) => const HomePage(),
+        LiveMatchCardDetails.id: (context) => const LiveMatchCardDetails(),
+      },
+      initialRoute: LiveMatchCardDetails.id,
     );
   }
 }

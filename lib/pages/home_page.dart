@@ -8,7 +8,7 @@ import 'package:score/widgets/up_comming_matchs.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
-
+  static String id = "HomePage";
   @override
   Widget build(BuildContext context) {
     return const Scaffold(

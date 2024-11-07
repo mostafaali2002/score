@@ -24,14 +24,12 @@ class _LiveMatchCardListState extends State<LiveMatchCardList> {
         home: "home",
         away: "away",
         time: "time",
-        firstScore: "firstScore",
-        secondScore: "secondScore",
         scoreOne: 3,
         scoreTwo: 2,
         cardBackGroundColor: AppStyle.appColorBlue),
     const LiveMatcheModel(
-        stadiumName: "stadiumName",
-        numberOfWeek: "numberOfWeek",
+        stadiumName: "mmm",
+        numberOfWeek: "11",
         firstTeamName: "firstTeamName",
         secondTeamName: "secondTeamName",
         firstTeamLogo: Assets.football,
@@ -39,8 +37,6 @@ class _LiveMatchCardListState extends State<LiveMatchCardList> {
         home: "home",
         away: "away",
         time: "time",
-        firstScore: "firstScore",
-        secondScore: "secondScore",
         scoreOne: 3,
         scoreTwo: 2,
         cardBackGroundColor: AppStyle.appColorOfWhite),
@@ -54,11 +50,9 @@ class _LiveMatchCardListState extends State<LiveMatchCardList> {
         home: "home",
         away: "away",
         time: "time",
-        firstScore: "firstScore",
-        secondScore: "secondScore",
         scoreOne: 3,
         scoreTwo: 2,
-        cardBackGroundColor: AppStyle.appColorOfWhite),
+        cardBackGroundColor: AppStyle.appColorOfWhite)
   ];
 
   @override
