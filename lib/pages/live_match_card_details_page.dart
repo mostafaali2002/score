@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:score/model/live_matche_model.dart';
 import 'package:score/utils/app_style.dart';
 import 'package:score/utils/assets.dart';
+import 'package:score/widgets/live_match_details.dart';
 import 'package:score/widgets/live_match_details_app_bar.dart';
 import 'package:score/widgets/live_matche_card.dart';
 import 'package:score/widgets/match_categories.dart';
@@ -49,7 +50,7 @@ class LiveMatchCardDetails extends StatelessWidget {
           SizedBox(
             height: 35,
           ),
-          Text("data"),
+          LiveMatchDetails(),
         ],
       ),
     );
