@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:score/utils/app_style.dart';
 import 'package:score/utils/assets.dart';
@@ -18,10 +19,13 @@ class AppLogo extends StatelessWidget {
         top: 13,
         child: Image.asset(Assets.football, height: logSize),
       ),
-      const Text(
-        "Sc    re",
-        style: AppStyle.styleBold48,
-      )
+      AnimatedTextKit(animatedTexts: [
+        TyperAnimatedText(
+          "Sc    re",
+          textStyle: AppStyle.styleBold48,
+          speed: const Duration(milliseconds: 90),
+        )
+      ])
     ]);
   }
 }
