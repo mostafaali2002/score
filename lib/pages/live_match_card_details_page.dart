@@ -20,7 +20,7 @@ class LiveMatchCardDetails extends StatelessWidget {
           const SizedBox(
             height: 50,
           ),
-          const LiveMatchDetailsAppBar(),
+          const LiveMatchDetailsAppBar(text: "Premier League"),
           const SizedBox(
             height: 67,
           ),

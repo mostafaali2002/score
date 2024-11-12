@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:score/pages/notification_page.dart';
 import 'package:score/widgets/app_logo.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -24,7 +25,9 @@ class CustomAppBar extends StatelessWidget {
           const AppLogo(logSize: 35),
           const Expanded(child: SizedBox()),
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, NotificationPage.id);
+              },
               icon: const Icon(
                 Icons.notifications,
                 color: Colors.white,

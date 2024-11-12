@@ -4,8 +4,9 @@ import 'package:score/utils/app_style.dart';
 class LiveMatchDetailsAppBar extends StatelessWidget {
   const LiveMatchDetailsAppBar({
     super.key,
+    required this.text,
   });
-
+  final String text;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -23,8 +24,8 @@ class LiveMatchDetailsAppBar extends StatelessWidget {
           const Spacer(
             flex: 2,
           ),
-          const Text(
-            "Premier League",
+          Text(
+            text,
             style: AppStyle.styleBold20,
           ),
           const Spacer(
