@@ -37,8 +37,8 @@ class _LiveMatchCardListState extends State<LiveMatchCardList> {
         home: "home",
         away: "away",
         time: "time",
-        scoreOne: 3,
-        scoreTwo: 2,
+        scoreOne: 2,
+        scoreTwo: 3,
         cardBackGroundColor: AppStyle.appColorOfWhite),
     const LiveMatcheModel(
         stadiumName: "stadiumName",
@@ -51,7 +51,7 @@ class _LiveMatchCardListState extends State<LiveMatchCardList> {
         away: "away",
         time: "time",
         scoreOne: 3,
-        scoreTwo: 2,
+        scoreTwo: 3,
         cardBackGroundColor: AppStyle.appColorOfWhite)
   ];
 

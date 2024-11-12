@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:score/model/live_matche_model.dart';
-import 'package:score/utils/app_style.dart';
-import 'package:score/utils/assets.dart';
 import 'package:score/widgets/live_match_details_app_bar.dart';
 import 'package:score/widgets/live_match_details_list.dart';
 import 'package:score/widgets/live_matche_card.dart';
@@ -13,44 +11,47 @@ class LiveMatchCardDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // var liveModel = ModalRoute.of(context)!.settings.arguments;
-    return const Scaffold(
-      backgroundColor: Color(0xff191616),
+    final liveModel =
+        ModalRoute.of(context)!.settings.arguments as LiveMatcheModel;
+    return Scaffold(
+      backgroundColor: const Color(0xff191616),
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
-          LiveMatchDetailsAppBar(),
-          SizedBox(
+          const LiveMatchDetailsAppBar(),
+          const SizedBox(
             height: 67,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16),
+            padding: const EdgeInsets.symmetric(horizontal: 16),
             child: LiveMatcheCard(
                 liveMatcheModel: LiveMatcheModel(
-              stadiumName: "stadiumName",
-              cardBackGroundColor: AppStyle.appColorOfWhite,
-              numberOfWeek: "numberOfWeek",
-              scoreOne: 0,
-              scoreTwo: 1,
-              firstTeamName: "firstTeamName",
-              secondTeamName: "secondTeamName",
-              firstTeamLogo: Assets.football,
-              secondTeamLogo: Assets.football,
-              home: "home",
-              away: "away",
-              time: "time",
+              stadiumName: liveModel.stadiumName,
+              cardBackGroundColor: liveModel.cardBackGroundColor,
+              numberOfWeek: liveModel.numberOfWeek,
+              scoreOne: liveModel.scoreOne,
+              scoreTwo: liveModel.scoreTwo,
+              firstTeamName: liveModel.firstTeamName,
+              secondTeamName: liveModel.secondTeamName,
+              firstTeamLogo: liveModel.firstTeamLogo,
+              secondTeamLogo: liveModel.secondTeamLogo,
+              home: liveModel.home,
+              away: liveModel.away,
+              time: liveModel.time,
             )),
           ),
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
-          MatchCategories(),
-          SizedBox(
+          const MatchCategories(),
+          const SizedBox(
             height: 35,
           ),
-          LiveMatchDetailsList(),
+          LiveMatchDetailsList(
+              scoreOne: liveModel.scoreOne.toString(),
+              scoreTwo: liveModel.scoreTwo.toString()),
         ],
       ),
     );
