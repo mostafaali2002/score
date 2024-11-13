@@ -27,10 +27,6 @@ class League extends StatelessWidget {
           leagueName,
           style: AppStyle.styleBold18,
         ),
-        const Icon(
-          Icons.keyboard_arrow_down_rounded,
-          color: Colors.white,
-        )
       ]),
     );
   }

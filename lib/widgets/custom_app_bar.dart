@@ -5,8 +5,9 @@ import 'package:score/widgets/app_logo.dart';
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({
     super.key,
+    this.onPressed,
   });
-
+  final Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -14,7 +15,7 @@ class CustomAppBar extends StatelessWidget {
       child: Row(
         children: [
           IconButton(
-            onPressed: () {},
+            onPressed: onPressed,
             icon: const Icon(
               Icons.category,
               color: Colors.white,

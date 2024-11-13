@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'package:score/widgets/custom_app_bar.dart';
+import 'package:score/widgets/custom_drawer.dart';
 import 'package:score/widgets/live_match_card_list.dart';
 import 'package:score/widgets/live_matches.dart';
 import 'package:score/widgets/up_comming_match_card_list.dart';
@@ -11,30 +11,37 @@ class HomePage extends StatelessWidget {
   static String id = "HomePage";
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Color(0xff191616),
+    final GlobalKey<ScaffoldState> _key = GlobalKey();
+    return Scaffold(
+      key: _key,
+      drawer: const CustomDrawer(),
+      backgroundColor: const Color(0xff191616),
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
-          CustomAppBar(),
-          SizedBox(
+          CustomAppBar(
+            onPressed: () {
+              _key.currentState!.openDrawer();
+            },
+          ),
+          const SizedBox(
             height: 67,
           ),
-          LiveMatches(),
-          SizedBox(
+          const LiveMatches(),
+          const SizedBox(
             height: 22,
           ),
-          LiveMatchCardList(),
-          SizedBox(
+          const LiveMatchCardList(),
+          const SizedBox(
             height: 40,
           ),
-          UpCommingMatchs(),
-          SizedBox(
+          const UpCommingMatchs(),
+          const SizedBox(
             height: 13,
           ),
-          UpCommingMatchList(),
+          const UpCommingMatchList(),
         ],
       ),
     );
