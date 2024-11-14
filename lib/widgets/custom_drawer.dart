@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:score/utils/app_style.dart';
-import 'package:score/utils/assets.dart';
-import 'package:score/widgets/custom_list_tile.dart';
+import 'package:score/widgets/drawer_categories_list.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({
@@ -20,42 +19,7 @@ class CustomDrawer extends StatelessWidget {
                 style: AppStyle.styleBold20,
               ),
             ),
-            CustomListTile(
-              iconLeague: Assets.logoLeague,
-              leagueName: "Premier League",
-              onTap: () {},
-              isSelected: false,
-            ),
-            CustomListTile(
-              iconLeague: Assets.logoLeague,
-              leagueName: "Premier League",
-              onTap: () {},
-              isSelected: false,
-            ),
-            CustomListTile(
-              iconLeague: Assets.logoLeague,
-              leagueName: "Premier League",
-              onTap: () {},
-              isSelected: false,
-            ),
-            CustomListTile(
-              iconLeague: Assets.logoLeague,
-              leagueName: "Premier League",
-              onTap: () {},
-              isSelected: false,
-            ),
-            CustomListTile(
-              iconLeague: Assets.logoLeague,
-              leagueName: "Premier League",
-              onTap: () {},
-              isSelected: false,
-            ),
-            CustomListTile(
-              iconLeague: Assets.logoLeague,
-              leagueName: "Premier League",
-              onTap: () {},
-              isSelected: false,
-            ),
+            DrawerCategoriesList()
           ],
         ));
   }

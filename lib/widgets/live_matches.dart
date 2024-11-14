@@ -17,7 +17,9 @@ class LiveMatches extends StatelessWidget {
             "Live Matches",
             style: AppStyle.styleBold20,
           ),
-          League(leagueIcon: Assets.logoLeague, leagueName: "Premier League"),
+          League(
+              leagueIcon: Assets.logoPremierLeague,
+              leagueName: "Premier League"),
         ],
       ),
     );

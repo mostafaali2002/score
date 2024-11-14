@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:score/model/category_model.dart';
 import 'package:score/utils/app_style.dart';
 
 class CustomListTile extends StatelessWidget {
   const CustomListTile({
     super.key,
-    required this.iconLeague,
-    required this.leagueName,
+    required this.categoryModel,
     this.onTap,
     required this.isSelected,
   });
-  final String iconLeague, leagueName;
+  final CategoryModel categoryModel;
   final Function()? onTap;
   final bool isSelected;
   @override
@@ -17,13 +17,13 @@ class CustomListTile extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       child: ListTile(
-        selectedTileColor: Color(AppStyle.appColorBlue),
+        selectedTileColor: const Color(AppStyle.appColorBlue),
         splashColor: const Color(AppStyle.appColorBlue),
         selected: isSelected,
         onTap: onTap,
-        leading: Image.asset(iconLeague, height: 30),
+        leading: Image.asset(categoryModel.leagueIcon, height: 30),
         title: Text(
-          leagueName,
+          categoryModel.leagueName,
           style: AppStyle.styleBold18,
         ),
       ),
