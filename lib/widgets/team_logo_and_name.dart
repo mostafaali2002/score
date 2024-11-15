@@ -15,14 +15,17 @@ class TeamLogoAndName extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Image.asset(icons),
-        const SizedBox(height: 16),
+        Image.asset(
+          icons,
+          height: 100,
+        ),
+        const SizedBox(height: 5),
         Text(
           name,
           style: AppStyle.styleBold16
               .copyWith(color: isActive ? Colors.white : Colors.black),
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: 5),
         Text(
           homeOrAway,
           style: AppStyle.styleRegular11
