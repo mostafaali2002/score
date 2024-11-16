@@ -15,7 +15,7 @@ class AppLogo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(children: [
       Positioned(
-        left: 46,
+        left: 50,
         top: 13,
         child: Image.asset(Assets.football, height: logSize),
       ),

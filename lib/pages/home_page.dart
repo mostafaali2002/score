@@ -35,11 +35,11 @@ class HomePage extends StatelessWidget {
           ),
           const LiveMatchCardList(),
           const SizedBox(
-            height: 40,
+            height: 35,
           ),
           const UpCommingMatchs(),
           const SizedBox(
-            height: 13,
+            height: 1,
           ),
           const UpCommingMatchList(),
         ],

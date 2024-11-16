@@ -30,7 +30,7 @@ class CommingMatchTeam extends StatelessWidget {
                 height: 40,
               ),
               const SizedBox(
-                height: 10,
+                height: 5,
               ),
               Text(
                 homeOrAway,
@@ -67,7 +67,7 @@ class CommingMatchTeam2 extends StatelessWidget {
               height: 40,
             ),
             const SizedBox(
-              height: 10,
+              height: 5,
             ),
             Text(
               homeOrAway2,

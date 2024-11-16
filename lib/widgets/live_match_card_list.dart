@@ -49,7 +49,7 @@ class _LiveMatchCardListState extends State<LiveMatchCardList> {
         secondTeamLogo: Assets.logoBigAston,
         home: "home",
         away: "away",
-        time: "time",
+        time: "10",
         scoreOne: 3,
         scoreTwo: 3,
         cardBackGroundColor: AppStyle.appColorOfWhite)

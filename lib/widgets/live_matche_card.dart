@@ -26,7 +26,7 @@ class LiveMatcheCard extends StatelessWidget {
             height: 250,
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 20),
+            padding: const EdgeInsets.only(top: 10),
             child: Column(
               children: [
                 CardDetails(
