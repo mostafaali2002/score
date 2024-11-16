@@ -10,8 +10,10 @@ class Assets {
   static const logoNewCastel = "asset/images/new.png";
   static const logoUnited = "asset/images/united.png";
   static const logoLever = "asset/images/lever.png";
+  static const logoBigLever = "asset/images/big_lever.png";
   static const logoArsenal = "asset/images/arsenal.png";
   static const logoAston = "asset/images/aston.png";
+  static const logoBigAston = "asset/images/big_aston.png";
   static const logoBrentford = "asset/images/brentford.png";
   static const logoLigue = "asset/images/ligue_1.png";
 }
