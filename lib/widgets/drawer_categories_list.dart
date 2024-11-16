@@ -31,7 +31,7 @@ class _DrawerCategoriesListState extends State<DrawerCategoriesList> {
     ),
     const CategoryModel(
       leagueName: "Ligue 1",
-      leagueIcon: Assets.logoPremierLeague,
+      leagueIcon: Assets.logoLigue,
     ),
   ];
   @override
@@ -43,8 +43,13 @@ class _DrawerCategoriesListState extends State<DrawerCategoriesList> {
                 isSelected: currentPage == index,
                 categoryModel: items[index],
                 onTap: () {
+                  currentPage = index;
                   setState(() {
-                    currentPage = index;
+                    if (index == 0) {
+                      Navigator.pop(context);
+                    }
+                    // currentPage = index;
+                    // Navigator.pop(context);
                   });
                 },
               )),

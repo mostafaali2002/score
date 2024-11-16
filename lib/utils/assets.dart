@@ -13,4 +13,5 @@ class Assets {
   static const logoArsenal = "asset/images/arsenal.png";
   static const logoAston = "asset/images/aston.png";
   static const logoBrentford = "asset/images/brentford.png";
+  static const logoLigue = "asset/images/ligue_1.png";
 }

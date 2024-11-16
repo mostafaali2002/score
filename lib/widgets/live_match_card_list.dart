@@ -40,19 +40,19 @@ class _LiveMatchCardListState extends State<LiveMatchCardList> {
         scoreOne: 2,
         scoreTwo: 3,
         cardBackGroundColor: AppStyle.appColorBlue),
-    // const LiveMatcheModel(
-    //     stadiumName: "Anfiled",
-    //     numberOfWeek: "11",
-    //     firstTeamName: "LEVERPOOL",
-    //     secondTeamName: "Aston Villa",
-    //     firstTeamLogo: Assets.logoLever,
-    //     secondTeamLogo: Assets.logoAston,
-    //     home: "home",
-    //     away: "away",
-    //     time: "time",
-    //     scoreOne: 3,
-    //     scoreTwo: 3,
-    //     cardBackGroundColor: AppStyle.appColorOfWhite)
+    const LiveMatcheModel(
+        stadiumName: "Anfiled",
+        numberOfWeek: "11",
+        firstTeamName: "LEVERPOOL",
+        secondTeamName: "Aston Villa",
+        firstTeamLogo: Assets.logoLever,
+        secondTeamLogo: Assets.logoAston,
+        home: "home",
+        away: "away",
+        time: "time",
+        scoreOne: 3,
+        scoreTwo: 3,
+        cardBackGroundColor: AppStyle.appColorOfWhite)
   ];
 
   @override
