@@ -16,4 +16,8 @@ class Assets {
   static const logoBigAston = "asset/images/big_aston.png";
   static const logoBrentford = "asset/images/brentford.png";
   static const logoLigue = "asset/images/ligue_1.png";
+  static const logoBigSerie = "asset/images/big_serie.png";
+  static const logoBiglegue1 = "asset/images/big_ligue1.png";
+  static const logoBigLaLiga = "asset/images/big_laliga.png";
+  static const logoBigBoundes = "asset/images/big_boundes.png";
 }

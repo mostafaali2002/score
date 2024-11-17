@@ -3,6 +3,7 @@ import 'package:score/model/category_model.dart';
 import 'package:score/pages/boundesliaga_page.dart';
 import 'package:score/pages/home_page.dart';
 import 'package:score/pages/laliga_page.dart';
+import 'package:score/pages/ligue_one_page.dart';
 import 'package:score/pages/serie_a_page.dart';
 import 'package:score/utils/assets.dart';
 import 'package:score/widgets/custom_list_tile.dart';
@@ -69,12 +70,12 @@ class _DrawerCategoriesListState extends State<DrawerCategoriesList> {
                       Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const BoundesLigaPage()));
+                              builder: (context) => const Serie_A_Page()));
                     } else {
                       Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Serie_A_Page()));
+                              builder: (context) => const LigueOnePage()));
                     }
                     // currentPage = index;
                     // Navigator.pop(context);

@@ -156,7 +156,7 @@ abstract class AppStyle {
   ];
   static const List<LiveMatcheModel> itemsBoundesLiga = [
     LiveMatcheModel(
-        leagueLogo: Assets.logoBundesLigaLeague,
+        leagueLogo: Assets.logoBigBoundes,
         stadiumName: "London Stadium",
         numberOfWeek: "11",
         firstTeamName: "CHELSEA",
@@ -170,7 +170,7 @@ abstract class AppStyle {
         scoreTwo: 2,
         cardBackGroundColor: AppStyle.appColorOfWhite),
     LiveMatcheModel(
-        leagueLogo: Assets.logoBundesLigaLeague,
+        leagueLogo: Assets.logoBigBoundes,
         stadiumName: "Old Trafford",
         numberOfWeek: "11",
         firstTeamName: "MAN UNITED",
@@ -184,7 +184,7 @@ abstract class AppStyle {
         scoreTwo: 3,
         cardBackGroundColor: AppStyle.appColorBlue),
     LiveMatcheModel(
-        leagueLogo: Assets.logoBundesLigaLeague,
+        leagueLogo: Assets.logoBigBoundes,
         stadiumName: "Anfiled",
         numberOfWeek: "11",
         firstTeamName: "LEVERPOOL",
@@ -200,7 +200,7 @@ abstract class AppStyle {
   ];
   static const List<LiveMatcheModel> itemsSerieA = [
     LiveMatcheModel(
-        leagueLogo: Assets.logoSerieALeague,
+        leagueLogo: Assets.logoBigSerie,
         stadiumName: "London Stadium",
         numberOfWeek: "11",
         firstTeamName: "CHELSEA",
@@ -214,7 +214,7 @@ abstract class AppStyle {
         scoreTwo: 2,
         cardBackGroundColor: AppStyle.appColorOfWhite),
     LiveMatcheModel(
-        leagueLogo: Assets.logoSerieALeague,
+        leagueLogo: Assets.logoBigSerie,
         stadiumName: "Old Trafford",
         numberOfWeek: "11",
         firstTeamName: "MAN UNITED",
@@ -228,7 +228,7 @@ abstract class AppStyle {
         scoreTwo: 3,
         cardBackGroundColor: AppStyle.appColorBlue),
     LiveMatcheModel(
-        leagueLogo: Assets.logoSerieALeague,
+        leagueLogo: Assets.logoBigSerie,
         stadiumName: "Anfiled",
         numberOfWeek: "11",
         firstTeamName: "LEVERPOOL",
@@ -244,7 +244,7 @@ abstract class AppStyle {
   ];
   static const List<LiveMatcheModel> itemsLiguOne = [
     LiveMatcheModel(
-        leagueLogo: Assets.logoLigue,
+        leagueLogo: Assets.logoBiglegue1,
         stadiumName: "London Stadium",
         numberOfWeek: "11",
         firstTeamName: "CHELSEA",
@@ -258,7 +258,7 @@ abstract class AppStyle {
         scoreTwo: 2,
         cardBackGroundColor: AppStyle.appColorOfWhite),
     LiveMatcheModel(
-        leagueLogo: Assets.logoLigue,
+        leagueLogo: Assets.logoBiglegue1,
         stadiumName: "Old Trafford",
         numberOfWeek: "11",
         firstTeamName: "MAN UNITED",
@@ -272,7 +272,7 @@ abstract class AppStyle {
         scoreTwo: 3,
         cardBackGroundColor: AppStyle.appColorBlue),
     LiveMatcheModel(
-        leagueLogo: Assets.logoLigue,
+        leagueLogo: Assets.logoBiglegue1,
         stadiumName: "Anfiled",
         numberOfWeek: "11",
         firstTeamName: "LEVERPOOL",
