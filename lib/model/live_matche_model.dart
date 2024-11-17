@@ -7,11 +7,13 @@ class LiveMatcheModel {
       secondTeamLogo,
       home,
       away,
+      leagueLogo,
       time;
 
   final int scoreOne, scoreTwo, cardBackGroundColor;
 
   const LiveMatcheModel({
+    required this.leagueLogo,
     required this.stadiumName,
     required this.cardBackGroundColor,
     required this.numberOfWeek,

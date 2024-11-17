@@ -12,8 +12,8 @@ class CustomDrawer extends StatelessWidget {
     return Drawer(
         backgroundColor: const Color(0xff191616),
         child: ListView(
-          children: [
-            const DrawerHeader(
+          children: const [
+            DrawerHeader(
               child: Text(
                 "Football leagues",
                 style: AppStyle.styleBold20,

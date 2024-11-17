@@ -8,12 +8,14 @@ import 'package:score/widgets/live_matches.dart';
 import 'package:score/widgets/up_comming_match_card_list.dart';
 import 'package:score/widgets/up_comming_matchs.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-  static String id = "HomePage";
+class LaligaPage extends StatelessWidget {
+  const LaligaPage({super.key});
+  static String id = "LaligaPage";
+
   @override
   Widget build(BuildContext context) {
     final GlobalKey<ScaffoldState> _key = GlobalKey();
+
     return Scaffold(
       key: _key,
       drawer: const CustomDrawer(),
@@ -32,12 +34,13 @@ class HomePage extends StatelessWidget {
             height: 67,
           ),
           const LiveMatches(
-              leagueIcon: Assets.logoPremierLeague,
-              leagueName: "Premier League"),
+            leagueIcon: Assets.logoLaLigaLeague,
+            leagueName: "Li Laga",
+          ),
           const SizedBox(
             height: 22,
           ),
-          LiveMatchCardList(itemsList: AppStyle.itemsPremier),
+          const LiveMatchCardList(itemsList: AppStyle.itemsLaliga),
           const SizedBox(
             height: 35,
           ),

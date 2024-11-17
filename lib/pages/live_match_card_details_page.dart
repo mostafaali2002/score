@@ -28,6 +28,7 @@ class LiveMatchCardDetails extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: LiveMatcheCard(
                 liveMatcheModel: LiveMatcheModel(
+              leagueLogo: liveModel.leagueLogo,
               stadiumName: liveModel.stadiumName,
               cardBackGroundColor: liveModel.cardBackGroundColor,
               numberOfWeek: liveModel.numberOfWeek,

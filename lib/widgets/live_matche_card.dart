@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:score/model/live_matche_model.dart';
 import 'package:score/pages/live_match_card_details_page.dart';
 import 'package:score/utils/app_style.dart';
-import 'package:score/utils/assets.dart';
 import 'package:score/widgets/card_details.dart';
 import 'package:score/widgets/teams_and_results_section.dart';
 
@@ -22,7 +21,7 @@ class LiveMatcheCard extends StatelessWidget {
             color: Color(liveMatcheModel.cardBackGroundColor)),
         child: Stack(children: [
           Image.asset(
-            Assets.logoFootball,
+            liveMatcheModel.leagueLogo,
             height: 250,
           ),
           Padding(
